@@ -1,0 +1,79 @@
+* {
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B2434;
+    margin: 0;
+}
+
+
+                                /* App */
+.tenzies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    width: 320px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 35px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.tenzies--title {
+    color: #000000;
+    font-size: 25.6px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.tenzies--info {
+    color: #4a4e74;
+    font-size: 13.11px;
+    font-weight: 400;
+    text-align: center;
+    margin: 5px; 
+    margin-bottom: 0;
+}
+
+.tenzies--button {
+    height: 35px;
+    width: 92px;
+    color: #F5F5F5;
+    background-color: #5035ff;
+    border: 0;
+    border-radius: 5px;
+}
+
+.tenzies--dies {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 20px;
+    /* grid-template: auto auto / repeat(5, 1fr); */
+    grid-template-columns: auto auto auto auto auto;
+    margin: 20px 0 22px 0;
+}
+
+
+                                /* Die */
+.die {
+    height: 35px;
+    width: 35px;
+    font-family: Karla;
+    text-align: center;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.32);
+    cursor: pointer;
+}
+
+.die--num {
+    font-size: 1.4rem;
+    margin: 0;
+    padding-top: 3px;
+}
