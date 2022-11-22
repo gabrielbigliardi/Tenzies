@@ -69,17 +69,21 @@ export default function App() {
 
 
     return (
-        <main className='tenzies'>
-            { tenzies && <Confetti /> }
-            <h1 className='tenzies--title'>Tenzies</h1>
-            <h3 className='tenzies--info'>Roll until all dice are the same. 
-                Click each die to freeze it at its 
-                current value between rolls.</h3>
-            <div className='tenzies--dies'>
-                {dieElements}    
-            </div>
-            <button className='tenzies--button' onClick={rollDice}>{tenzies ? 'New Game' : 'Roll'}</button>
-        </main>
-        
+        <>
+            <main className='tenzies'>
+                { tenzies && <Confetti /> }
+                <h1 className='tenzies--title'>Tenzies</h1>
+                {/* <h3 className='tenzies--info'>Roll until all dice are the same. 
+                    Click each die to freeze it at its 
+                    current value between rolls.</h3> */}
+                    <h3 className='tenzies--info'>Jogue as peças até que os números sejam iguais. 
+                    Clique nas peças para salvar o valor atual.</h3>
+                <div className='tenzies--dies'>
+                    {dieElements}    
+                </div>
+                <button className='tenzies--button' onClick={rollDice}>{tenzies ? 'Novo Jogo' : 'Jogar'}</button>
+            </main>
+                <footer className='tenzies--jumba'>Jumba Enterprise ®</footer>
+        </>
     )
 }
